@@ -3,7 +3,7 @@ from PIL import Image
 import pytesseract
 from wand.image import Image as wi
 
-pdf = wi(filename = "sample.pdf", resolution = 300)
+pdf = wi(filename = "THIS IS A TEST PDF.pdf", resolution = 300)
 pdf = pdf.convert('jpeg')
 
 imageBlovsv = []
@@ -19,4 +19,4 @@ for imgBlob in imageBlobs:
     texr = pytesseract.image_to_string(im, lang = 'eng')
     recognized_text.append(text)
 
-print(recongnized_text)    
+print(recongnized_text)

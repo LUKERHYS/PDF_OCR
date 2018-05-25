@@ -27,7 +27,8 @@ for img in req_image:
     )
     final_text.append(txt)
 
-def 
+def
 
 for stock in final_text:
     if stock == stock_ref
+    

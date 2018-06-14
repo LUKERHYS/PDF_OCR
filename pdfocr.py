@@ -1,9 +1,10 @@
 import io
+#from PIL import Image
 from PIL import Image
-import pytesseract
+#import pytesseract
 from wand.image import Image as wi
 
-pdf = wi(filename = "THIS IS A TEST PDF.pdf", resolution = 300)
+pdf = wi(filename = "test.pdf", resolution = 300)
 pdf = pdf.convert('jpeg')
 
 imageBlovsv = []
